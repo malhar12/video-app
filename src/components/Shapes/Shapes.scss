@@ -1,0 +1,38 @@
+$light-red-color: #FDEFEE;
+$light-yellow-color: #FDF7E7;
+$light-green-color: #E7F7F7;
+
+.shapes-container{
+    position: absolute;
+    left: 20%;
+    .shapes{
+        border-radius: 50%;
+        position: absolute;
+    }
+    .red-circle{
+        width: 385.78px;
+        height: 385.78px;
+        left: 1118.12px;
+        top: -75px;
+        background: $light-red-color;
+        z-index: 3;
+    }
+    .yellow-circle{
+        width: 368.25px;
+        height: 263.03px;
+        left: 949.54px;
+        top: 54.16px;
+        background: $light-yellow-color;
+        transform: rotate(9.53deg);
+        z-index: 1;
+    }
+    .green-circle{
+        width: 368.25px;
+        height: 263.03px;
+        left: 1144.12px;
+        top: 188.03px;
+        background: $light-green-color;
+        transform: rotate(9.53deg);
+        z-index: 2;
+    }
+}
