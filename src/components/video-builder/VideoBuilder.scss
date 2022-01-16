@@ -1,0 +1,140 @@
+.invisible-fieldset{
+    border: 0;
+}
+
+.form-container{
+    margin-top: 50px;
+    margin-left: 41px;
+    .title-form{
+        form{
+            > fieldset:not(:last-of-type){
+                margin-bottom: 24px;
+            }
+        }
+        .title-input{
+            font-size: 22px;
+            width: 350px;
+            border-bottom-width: 1px;
+            border-bottom-color: #83caf7;
+            color: #3860ad;
+            font-weight: 500;
+            line-height: 31px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            &:focus-visible{
+                outline: 0;
+            }
+            &::placeholder{
+                font-size: 22px;
+            }
+        }
+        .tag{
+            border: 1px solid #999999;
+            padding: 2px 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #999999;
+            margin-right: 5px;
+        }
+        .tag.selected{
+            background-color: #999999;
+            color: #ffffff;
+        }
+    }
+    .four-part-form{
+        .video-form{
+            padding: 0 3em;
+            .video-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+                border-bottom: 1px solid #cecece;
+                button:not(:last-of-type){
+                    margin-right: 10px;
+                }
+            }
+            .video-content-container{
+                margin-top: 20px;
+                display: flex;
+                gap: 2em;
+                .picture-area{
+                    height: 400px;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                }
+                .picture-preview{
+                    border-radius: 20px;
+                    width: 700px;
+                    background-color: #cecece;
+                    padding: 20px;
+                }
+                .videos-form{
+                    width: 50%;
+                    .image-list{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1em;
+                        > .image-item{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 0.5em;
+                            cursor: pointer;
+                        }
+                    }
+                    .voice-list{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                        > .voice-item{
+                            width: 100%;
+                            height: 70px;
+                            background-color: #f1f1f1;
+                            display: flex;
+                            align-items: center;
+                            gap: 1em;
+                            padding: 10px;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #EBF2FF;
+                                .logo{
+                                    color: #3860AD;
+                                }
+                            }
+                            .logo{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .text-area{
+                    position: relative;
+                    .show-toolkit{
+                        display: flex;
+                        justify-content: space-between;
+                        // padding: 0 20px;
+                        position: absolute;
+                        bottom: 20px;
+                        width: 100%;
+                    }
+                    textarea{
+                        width: 100%;
+                        border-radius: 20px;
+                        height: 100px;
+                        border-color: #cecece;
+                        padding: 20px;
+                        &::placeholder{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        outline: 0;
+                    }
+                }
+            }
+        }
+    }
+}

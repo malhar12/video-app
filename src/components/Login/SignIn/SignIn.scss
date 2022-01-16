@@ -1,0 +1,80 @@
+.signin-component {
+    background-image: url('../../../assets/background-image.png');
+    h3{
+        margin: 44px 0 0 41px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #222222;
+    }
+    .content{
+        color: #222222;
+        margin: 240px auto;
+        width: 360px;
+        
+        .input-label{
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+
+        input{
+            border: 1px solid #999999;
+            box-sizing: border-box;
+            border-radius: 6px;
+            width: 360px;
+            height: 40px;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        input:hover,
+        input:focus{
+            border: 1px solid #5C90F3;
+        }
+
+        ::placeholder{
+            color: #CCCCCC;
+        }
+
+        .panel{
+            position: relative;
+        }
+
+        .forgot-label{
+            position: absolute;
+            top: 4px;
+            right: 0px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 19px;
+            text-align: right;
+            color: #3860AD;
+            text-decoration: none;
+        }
+        .submit-btn{
+            margin: 10px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 6px 20px;
+            color: #FFFFFF;
+            box-shadow: none;
+            border: none;
+            background: #46B13D;
+            border-radius: 6px;
+        }
+
+        .signup-panel{
+            text-align: center;
+            .forgot-label{
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}

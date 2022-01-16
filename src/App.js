@@ -3,7 +3,9 @@ import Page from './components/Page/Page';
 
 function App() {
   return (
-    <Page />
+    <div className="App">
+      <Page />
+    </div>
   );
 }
 
